@@ -24,8 +24,8 @@ def difference(s,k):
         return "Difference can’t be calculated."
     else:
         diff = lastindex-firstindex
-        return diff
+        return diff-1
 s = str(input("Enter a string: "))
 k = str(input("ENter the character to be searched in the given string: "))
-result = difference(s,k)-1
+result = difference(s,k)
 print(result)
