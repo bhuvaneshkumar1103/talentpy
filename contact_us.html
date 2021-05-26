@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Contact details</title>
+        <link href='https://fonts.googleapis.com/css?family=Mitr' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Trade Winds' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Merienda One' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Sonsie One' rel='stylesheet'>
+        
+        <style>
+            body {
+              background-image: url('enquiry-icon-png-28533.png' );
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: 100%;
+              font-family: 'Trade Winds';font-size: 22px;
+            }
+            form {
+                display: block;
+                margin-top: 0em;
+                padding: 8px;
+                font-family: 'Mitr';
+            }
+            ol{
+                font-family: 'Merienda One'; 
+            }
+            a{
+                font-family: 'Sonsie One';
+            }
+        </style>
+    </head>
+    <body>
+        <form onsubmit="myFunction()" style="color:rgb(255, 0, 0)">
+            <label for="fname">Username:</label>
+            <input type="text" id="fname" name="fname" required="Username"><br><br>
+            <label for="lname">E - mail:</label>
+            <input type="text" id="lname" name="lname" required><br><br>
+            <label for="phone">Phone No:</label>
+            <input type="number" id="phone" name="phone" required ><br><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female" >
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+            <label for="Enquiry" id="enquiry"> Enquiry:</label>
+            <textarea id="enquiry" rows="5" cols="50" required></textarea><br><br><br>
+            <b><input type="submit"  id = "sendEnquiry" value="Send Enquiry" style="color:rgb(255, 0, 0)" width="700" height="350"></b>
+            
+        </form>
+        
+        <script>
+            function myFunction() {
+                alert("Thanks for your Enquiry");
+        }   
+        </script>
+
+          
+        <ol style="color: deeppink;">
+            <li>To go to home page, Click the <b>Go to Home</b></li>
+            <li>For product details, Click the <b>Product details</b></li>
+            <li>For contact us, Click the <b>For contact</b></li>
+        </ol> 
+        <center> <a href = "home.html" style="color:navy;">Go to Home</a><br>
+        <a href = "product.html" style="color:navy">Product details</a><br>
+        <a href ="contact_us.html" style="color:navy">For Contact </a><br></center>
+    </body>
+</html>
